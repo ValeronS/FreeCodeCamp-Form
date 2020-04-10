@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Кем ты можешь стать?</h1>
+        <p id="description" class="description text-center">
+          Если ответить на эти вопросы, можно определиться с дальнейшей жизнью
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Имя</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Введите имя"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="Email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Возраст<span class="clue"
+              >(необязательно к заполнению)</span
+            ></label>
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="100"
+            class="form-control"
+            placeholder="Возраст"
+          />
+        </div>
+        <div class="form-group">
+          <p>Уровень знаний программирования</p>
+          <select id="dropdown" name="level" class="form-control" required>
+            <option disabled selected value>Выбери уровень знаний</option>
+            <option value="think">Думаю о познании</option>
+            <option value="plan">Планирую познавать</option>
+            <option value="learn">Познаю</option>
+            <option value="learned">Познал</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Будешь ли ты советовать друзьям учиться программированию?</p>
+          <label>
+            <input
+              name="advice"
+              value="Определенно"
+              type="radio"
+              class="input-radio"
+              checked
+            />Определенно
+          </label>
+          <label>
+            <input
+              name="advice"
+              value="Возможно"
+              type="radio"
+              class="input-radio"
+            />Возможно</label
+          >
+          <label>
+            <input
+              name="advice"
+              value="Скорее нет, чем да..."
+              type="radio"
+              class="input-radio"
+            />Скорее нет, чем да...</label
+          >
+        </div>
+        <div class="form-group">
+          <p>
+            Почему ты решил, что программирование - хорошая профессия для тебя?
+          </p>
+          <label>
+            <input
+              name="reason"
+              ;
+              value="Зарплата"
+              ;
+              type="checkbox"
+              ;
+              class="input-checkbox"
+              ;
+            />Зарплата</label
+          >
+          <label>
+            <input
+              name="reason"
+              ;
+              value="Предрасположенность"
+              ;
+              type="checkbox"
+              ;
+              class="input-checkbox"
+              ;
+            />Предрасположенность</label
+          >
+          <label>
+            <input
+              name="reason"
+              ;
+              value="Интерес"
+              ;
+              type="checkbox"
+              ;
+              class="input-checkbox"
+              ;
+            />Интерес</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>Любой комментарий</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Всё что угодно..."
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Подтвердить и отправить
+          </button>
+        </div>
+      </form>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
